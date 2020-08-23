@@ -8,7 +8,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: lede-newifi-D2
+name: lede-newifi-D2 ==> 0.2
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
 
   build_openwrt:
 
-    name: Build newifi-D2
+    name: Build newifi-D2 ==> 0.2
     runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
@@ -146,17 +146,14 @@ jobs:
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
           CONFIG_PACKAGE_luci-app-arpbind=y
           CONFIG_PACKAGE_luci-app-autoreboot=y
-          CONFIG_PACKAGE_luci-app-baidupcs-web=y
           CONFIG_PACKAGE_luci-app-ddns=y
           CONFIG_PACKAGE_luci-app-filetransfer=y
           CONFIG_PACKAGE_luci-app-firewall=y
           CONFIG_PACKAGE_luci-app-flowoffload=y
           CONFIG_PACKAGE_luci-app-hd-idle=y
-          CONFIG_PACKAGE_luci-app-kodexplorer=y
           CONFIG_PACKAGE_luci-app-mtwifi=y
           CONFIG_PACKAGE_luci-app-nlbwmon=y
           CONFIG_PACKAGE_luci-app-ntpc=y
-          CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-ramfree=y
           CONFIG_PACKAGE_luci-app-samba=y
           CONFIG_PACKAGE_luci-app-sqm=y
@@ -165,12 +162,10 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-          CONFIG_PACKAGE_luci-app-transmission=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_PACKAGE_luci-app-upnp=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
-          CONFIG_PACKAGE_luci-app-vsftpd=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wol=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
