@@ -22,7 +22,7 @@ jobs:
 
   build_openwrt:
 
-    name: Build newifi-D2 ==> 0.2
+    name: Build newifi-D2 ==> 0.3
     runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
